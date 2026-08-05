@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -10,9 +11,15 @@ function NotFound() {
 }
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <>
+    <div className={darkMode ? 'app dark-mode' : 'app'}>
       <NavBar />
+      <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? '☀️ Light' : '🌙 Dark'}
+      </button>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
@@ -20,8 +27,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
-export default App;
+export default App; 

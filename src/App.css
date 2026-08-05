@@ -101,3 +101,84 @@ body {
   color: white;
   margin-top: 30px;
 }
+.dark-mode {
+  background-color: #0f1117;
+  color: #e4e4e7;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .header {
+  background-color: #1a1c23;
+  border-bottom: 1px solid #2a2d36;
+}
+
+.dark-mode .header h1 {
+  color: #e4e4e7;
+}
+
+.dark-mode .navbar {
+  background-color: #1a1c23;
+  box-shadow: none;
+}
+
+.dark-mode .skill-badge {
+  background-color: #24263a;
+  color: #a5b4fc;
+  border: 1px solid #3a3d55;
+}
+
+.dark-mode .contact-textarea {
+  background-color: #1a1c23;
+  color: #e4e4e7;
+  border: 1px solid #2a2d36;
+}
+
+.dark-mode .contact-textarea:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
+
+.dark-mode .footer {
+  background-color: #2a2d36;
+}
+
+.theme-toggle {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.dark-mode .theme-toggle {
+  background-color: #2a2d36;
+  color: #e4e4e7;
+  border: 1px solid #3a3d46;
+}
+
+.tip-toggle {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.tip-text {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.dark-mode .tip-text {
+  color: #9ca3af;
+}

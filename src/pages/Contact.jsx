@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 function Contact() {
   const [message, setMessage] = useState('');
+  const [showTip, setShowTip] = useState(false);
 
   return (
     <section className="contact">
@@ -11,6 +12,14 @@ function Contact() {
         <p>Email: yourname@example.com</p>
         <p>Phone: +91 XXXXXXXXXX</p>
       </div>
+
+      <button className="tip-toggle" onClick={() => setShowTip(!showTip)}>
+        {showTip ? 'Hide Tip' : 'Show Tip'}
+      </button>
+
+      {showTip && (
+        <p className="tip-text">Tip: Keep your message short and clear.</p>
+      )}
 
       <textarea
         className="contact-textarea"
