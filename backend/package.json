@@ -1,0 +1,14 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "Practical 4 (in-memory CRUD) + Practical 5 (MongoDB/Mongoose CRUD) merged",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "dotenv": "^16.4.5"
+  }
+}
