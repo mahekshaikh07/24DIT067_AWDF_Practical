@@ -11,6 +11,9 @@ const errorHandler = require("./middleware/errorHandler");
 const taskRoutes = require("./routes/taskRoutes");           // Practical 4 (in-memory)
 const mongoTaskRoutes = require("./routes/mongoTaskRoutes"); // Practical 5 (MongoDB)
 
+const cors = require("cors");
+app.use(cors());
+
 app.use(express.json());       // parse incoming JSON body
 app.use(logger);               // log every request
 app.use(jsonValidator);        // check content-type on POST/PUT
